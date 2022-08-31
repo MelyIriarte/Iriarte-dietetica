@@ -47,7 +47,6 @@ span.badge{
 
 .carrito{
   position: absolute;
-
 }
 
 .badge{
@@ -55,4 +54,35 @@ span.badge{
   background-color: red;
 }
 
-/* cards */
+/* generales */
+
+.body-propiedades{
+  background-color: #efe9e8;
+}
+
+/* contador */
+.contador{
+  margin: auto;
+  width: fit-content;
+  background-color: #d9dfd3;
+  text-align: center;
+  padding: 1rem;
+}
+
+button{
+  background-color: #d9dfd3;
+  color: #003608;
+}
+
+button.agregar-carrito {
+  margin: 10px;
+  border-radius: 19px;
+  padding: 3px;
+  background-color: #003608;
+  color: white;
+}
+
+button.componentes {
+  padding: 4px;
+  border: transparent;
+}

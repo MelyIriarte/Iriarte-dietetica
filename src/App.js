@@ -2,7 +2,6 @@
 import './App.css';
 import NavBar from './componentes/NavBar.js';
 import ItemListConteiner from './componentes/ItemListConteiner.js'
-import ItemCount from './componentes/ItemCount';
 
 import Home from './paginas/Home.js';
 import Almacen from './paginas/Almacen.js'
@@ -16,8 +15,8 @@ function App() {
   return (
    <BrowserRouter>
      <NavBar/>
-    
-    <div>
+
+    <body className='body-propiedades'>
       <Routes>
       <Route path="/home" element={<Home/>}/>
       <Route path="/almacen" element={<Almacen/>}/>
@@ -26,11 +25,16 @@ function App() {
       <Route path="/congelados" element={<Congelados/>}/>  
       <Route path="/singluten" element={<SinGluten/>}/>
       </Routes>
-    </div>
+     
+      <ItemListConteiner/>
     
-    <ItemListConteiner/>
-    <ItemCount/>
   
+    </body>
+    
+  
+
+
+   
 
     </BrowserRouter>
   
