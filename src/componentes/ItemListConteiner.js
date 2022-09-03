@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCount from './ItemCount';
+import ItemCount from './ItemCount.js';
 
 function ItemListConteiner() {
   
@@ -8,7 +8,12 @@ function ItemListConteiner() {
   }
   
   return (
-    <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+    
+  <>
+ 
+  <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+  </>
+    
   )
 }
 
