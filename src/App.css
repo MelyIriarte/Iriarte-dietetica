@@ -56,9 +56,7 @@ span.badge{
 
 /* generales */
 
-.body-propiedades{
-  background-color: #efe9e8;
-}
+
 
 /* contador */
 .contador{
@@ -91,6 +89,92 @@ button.componentes {
 
 h3{
   text-align: center;
-  font-size: 30px;
-  
+  font-size: 10px;
+  margin: 0%;
+  padding-top: 10px;
 }
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color:#efe9e8 ;
+}
+
+.content{
+  width: 17%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: auto;
+  box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22);
+  transition: .4s;
+  background-color: #d0d9c6 ;
+}
+
+.content:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0, 0.23);
+  transform: translate(0px, -8px);
+}
+
+img{
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 0px;
+  outline: none;
+  border-radius: 20px 20px 0px 0px;
+ 
+}
+
+p{
+  text-align: center;
+  padding-top:0 8px;
+}
+
+
+h6{
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+}
+
+.buttonCard {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+ background: #003608; 
+}
+
+
+
+@media only screen and (min-width: 824px) and (max-width: 1023px){
+  .content{
+    width: 20%;
+  }
+
+
+};
+
+@media (max-width:825px){
+  .content{
+    width: 29%
+  }
+
+  h6{
+    font-size: 20px;
+  }
+  
+};

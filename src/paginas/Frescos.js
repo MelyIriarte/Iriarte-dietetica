@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Frescos() {
+function FrescosyCongelados() {
   return (
     <div>
-      Frescos
+      Frescos y Congelados
     </div>
   )
 }
 
-export default Frescos
+export default FrescosyCongelados

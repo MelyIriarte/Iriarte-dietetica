@@ -15,8 +15,7 @@ const NavBar = () => {
                    <NavLink to="/home">Home</NavLink>
                    <NavLink to="/almacen">Almacen</NavLink>
                    <NavLink to="/bebidas">Bebidas </NavLink>
-                   <NavLink to="/frescos">Frescos</NavLink>
-                   <NavLink to="/congelados">Congelados</NavLink>
+                   <NavLink to="/frescosycongelados">Frescos y Congelados</NavLink>
                    <NavLink to="singluten">Sin Gluten</NavLink>
                  </Nav>
             </Navbar.Collapse>
