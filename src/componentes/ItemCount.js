@@ -1,4 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { IoAddOutline } from 'react-icons/io5';
+import {HiOutlineMinus } from 'react-icons/hi';
+
 
 function ItemCount({ initial,stock, onAdd }) {
     const [ count , setCount] = useState( parseInt(initial));
@@ -15,14 +18,16 @@ function ItemCount({ initial,stock, onAdd }) {
 
     return (
     <div className='contador'>
-      
-     <button className='componentes'  disabled={count <= 1} onClick={decrease}>-</button>
-          <span> {count} </span> 
-     <button className='componentes' disabled={count >= stock} onClick={increase}>+</button>
      
+     <div className='btn'>
+         <button className='componentes'  disabled={count <= 1} onClick={decrease}><HiOutlineMinus fontSize="20px"/></button>
+            <span> {count} </span> 
+         <button className='componentes' disabled={count >= stock} onClick={increase}> <IoAddOutline fontSize="20px"/></button>
+    </div>
+
     <div>
       <button className='agregar-carrito' disible={stock <= 0} onClick={ ()=> onAdd(count)}> Agregar al carrito </button>   
-   </div>   
+    </div>   
    
    </div>
   );

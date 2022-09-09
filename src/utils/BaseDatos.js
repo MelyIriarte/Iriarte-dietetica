@@ -1,3 +1,4 @@
+
 const BaseDatos = [
     {
       id: 1,
@@ -6,7 +7,8 @@ const BaseDatos = [
       contenido:
         "Almendras descascaradas, se vende de a bolsas de 100gr",
       precio: "$500",
-      categoria: "A1"
+      categoria: "A1",
+      stock: "30"
     },
     {
       id: 2,
@@ -15,7 +17,8 @@ const BaseDatos = [
       contenido:
         "Nuez descascaradas, se vende de a bolsas de 100gr",
       precio: "$500",
-      categoria: "A1"
+      categoria: "A1", 
+      stock: "30"
     },
     {
       id: 3,
@@ -23,8 +26,9 @@ const BaseDatos = [
       titulo: "Pistachos",
       contenido:
         "Pistachos salados, se vende de a bolsas de 100gr",
-      precio: "$900 x gr",
-      categoria: "A1"
+      precio: "$900",
+      categoria: "A1",
+      stock: "30"
     },
     {
       id: 4,
@@ -32,8 +36,9 @@ const BaseDatos = [
       titulo: "Avellana",
       contenido:
         "Avellana descascarada, se vende de a bolsas de 100gr",
-      precio: "$900 x gr",
-      categoria: "A1"
+      precio: "$900 ",
+      categoria: "A1",
+      stock: "20"
     },
     {  
       id: 5,
@@ -41,7 +46,7 @@ const BaseDatos = [
       titulo: "Castanas de Caju",
       contenido:
         "Castanas, se vende de a bolsas de 100gr",
-      precio: "$900 x gr",
+      precio: "$900",
       categoria: "A1"},
     {
       id: 6,
@@ -49,7 +54,7 @@ const BaseDatos = [
       titulo: "Mix Frutos Secos",
       contenido:
         "Mix que tiene almendras,nueces,avellanas,castanas de caju. Se vende de a 1/2KG",
-      precio: "$1900 x gr",
+      precio: "$1900 ",
       categoria: "A1"
     }, {
       id: 7,
@@ -57,16 +62,19 @@ const BaseDatos = [
       titulo: "Mix Frutos con Pasas",
       contenido:
       "Mix que tiene almendras,nueces,pasas de uvas ,castanas de caju. Se vende de a 1/2KG",
-      precio: "$1600 x gr",
-      categoria: "A1"},
+      precio: "$1600",
+      categoria: "A1", 
+      stock: "30"
+    },
     {
       id: 8,
       img: "https://i.postimg.cc/Z517wVCp/frutas-confitadas-de-color-con-fondo-blanco-251781025.jpg",
       titulo: "Frutas Abrillantadas",
       contenido:
         "Fruta Abrillantada, se vende de a bolsas de 250gr",
-      precio: "$700 x gr",
-      categoria: "A1"
+      precio: "$700",
+      categoria: "A1",
+      stock: "30"
     },
     {
       id: 9,
@@ -74,24 +82,29 @@ const BaseDatos = [
       titulo: "Semillas Lino",
       contenido:
         "Lino, se vende de a bolsas de 100gr",
-      precio: "$400 x gr",
-      categoria: "A1"},
+      precio: "$400 ",
+      categoria: "A1",
+      stock: "10"},
     {
       id: 10,
       img: "https://i.postimg.cc/XJMfm3LH/soya-min.png",
       titulo: "Soja Texturizada",
       contenido:
         "Soja texturizada en trozos, se vende de a bolsas de 500gr",
-      precio: "$800 x gr",
-      categoria: "A1"},
+      precio: "$800",
+      categoria: "A1",
+      stock: "15"
+    
+    },
      {
       id: 11,
       img: "https://i.postimg.cc/K8RtY4sp/almendras-Choco-min.png",
       titulo: "Almendras con Chocolate",
       contenido:
         "Almendras, se vende de a bolsas de 100gr",
-      precio: "$600 x gr",
-      categoria: "A1" 
+      precio: "$600",
+      categoria: "A1",
+      stock: "50"
     }, 
     {
       id: 12,
@@ -99,8 +112,10 @@ const BaseDatos = [
       titulo: "Nueces con Chocolate",
       contenido:
         "Nuez con Chocolate, se vende de a bolsas de 100gr",
-      precio: "$500 x gr",
-      categoria: "A1" },
+      precio: "$500",
+      categoria: "A1" ,
+      stock: "100"},
+     
     
     {
       id: 13,
@@ -108,8 +123,9 @@ const BaseDatos = [
       titulo: "Semillas Girasol",
       contenido:
         "Semillas de Girasol peladas, se vende de a bolsas de 100gr",
-      precio: "$900 x gr",
-      categoria: "A1" 
+      precio: "$900",
+      categoria: "A1" ,
+      stock: "150"
     },
     {
       id: 14,
@@ -117,8 +133,9 @@ const BaseDatos = [
       titulo: "Semillas de Chia",
       contenido:
         "Chia, se vende de a bolsas de 100gr",
-      precio: "$900 x gr",
-      categoria: "A1" 
+      precio: "$900",
+      categoria: "A1",
+      stock: "20"
     },
     {
       id: 15,
@@ -126,8 +143,9 @@ const BaseDatos = [
       titulo: "Bizcocho de Chocolate",
       contenido:
         "Bizcochos humedos de chocolates rellenos de una crema suavey delicisosa",
-      precio: "$900 x gr",
-      categoria: "SG" 
+      precio: "$900",
+      categoria: "SG",
+      stock: "120" 
     },
     
     {
@@ -136,8 +154,9 @@ const BaseDatos = [
       titulo: "Papas Fritas",
       contenido:
         "+Tubo de papas fritas sabor barbacoa",
-      precio: "$900 x gr",
-      categoria: "SG"  },
+      precio: "$900",
+      categoria: "SG",
+      stock: "30"  },
     {
       id: 17,
       img: "https://i.postimg.cc/RZMbp1h6/Any-Conv-com-pan-min.png",
@@ -145,7 +164,8 @@ const BaseDatos = [
       contenido:
         "Pan casero cortado en rodajas 250gr",
       precio: "$600",
-      categoria: "SG" 
+      categoria: "SG", 
+      stock: "30" 
     },
      {
       id: 18,
@@ -154,7 +174,8 @@ const BaseDatos = [
       contenido:
         "Barritas de chocolate con relleno de dulce de leche, caja con 5 unidades",
       precio: "$900 ",
-      categoria: "SG" 
+      categoria: "SG",
+      stock: "30" 
     },
     {
       id: 19,
@@ -163,7 +184,8 @@ const BaseDatos = [
       contenido:
         "Lecche de almendras Almond Brezze, sabor original sin azucar",
       precio: "$810 ",
-      categoria: "B1" 
+      categoria: "B1", 
+      stock: "30" 
     },
     {
       id: 20,
@@ -172,7 +194,8 @@ const BaseDatos = [
       contenido:
         "Leche de almendras Amande, hiper cremosa x litro",
       precio: "$950 ",
-      categoria: "B1" 
+      categoria: "B1", 
+      stock: "60" 
     },
     {
       id: 21,
@@ -181,7 +204,8 @@ const BaseDatos = [
       contenido:
         "Frutos rojos congelados, en bolsa de 1/2kg",
       precio: "$1200 ",
-      categoria: "FC" 
+      categoria: "FC",
+      stock: "40"
     },
     {
       id: 22,
@@ -190,7 +214,8 @@ const BaseDatos = [
       contenido:
         "Arandanos congelados, en bolsa de 1/2kg",
       precio: "$1200 ",
-      categoria: "FC" 
+      categoria: "FC", 
+      stock: "30"
     },
     {
       id: 23,
@@ -199,7 +224,8 @@ const BaseDatos = [
       contenido:
         "Frambuesas congelados, en bolsa de 1/2kg",
       precio: "$1200 ",
-      categoria: "FC" 
+      categoria: "FC",  
+      stock: "50" 
     },
     {
       id: 24,
@@ -208,7 +234,8 @@ const BaseDatos = [
       contenido:
         "Pulpa de Mango congelados, en bolsa de 1/2kg",
       precio: "$800 ",
-      categoria: "FC" 
+      categoria: "FC", 
+      stock: "20" 
     },
     {
       id: 25,
@@ -217,7 +244,8 @@ const BaseDatos = [
       contenido:
         "Pulpa de Frutilla congelados, en bolsa de 1/2kg",
       precio: "$800 ",
-      categoria: "FC" 
+      categoria: "FC" ,
+      stock: "20" 
     },
     {
       id: 26,
@@ -226,7 +254,8 @@ const BaseDatos = [
       contenido:
         "Hamburguesas NotBurguer, x 8 unidades",
       precio: "$1800 ",
-      categoria: "FC" 
+      categoria: "FC",
+      stock: "20"  
     },
     {
       id: 27,
@@ -235,7 +264,8 @@ const BaseDatos = [
       contenido:
         "Tofu organico y gluten free",
       precio: "$800 ",
-      categoria: "FC" 
+      categoria: "FC",
+      stock: "20"  
     },
     {
       id: 28,
@@ -244,7 +274,9 @@ const BaseDatos = [
       contenido:
         "Hamburguesas de Vegetales",
       precio: "$700 ",
-      categoria: "FC" 
+      categoria: "FC",
+      stock: "20"  
+
     },
 
   ];

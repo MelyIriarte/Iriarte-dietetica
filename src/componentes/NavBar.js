@@ -12,15 +12,14 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" /> 
             <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="me-auto">
-                   <NavLink to="/home">Home</NavLink>
                    <NavLink to="/almacen">Almacen</NavLink>
                    <NavLink to="/bebidas">Bebidas </NavLink>
                    <NavLink to="/frescosycongelados">Frescos y Congelados</NavLink>
                    <NavLink to="singluten">Sin Gluten</NavLink>
                  </Nav>
             </Navbar.Collapse>
-            <CartWidget/>
         </Container>
+            <CartWidget/>
       </Navbar>
     );
 }

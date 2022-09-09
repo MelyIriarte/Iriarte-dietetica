@@ -1,8 +1,7 @@
 import React from 'react';
+import { ImEyePlus } from 'react-icons/im'
 
-
-function Card({img , titulo , contenido , precio}) {
-   
+function CardPerso({img , titulo , contenido , precio}) {
  
   return (
  
@@ -11,10 +10,12 @@ function Card({img , titulo , contenido , precio}) {
       <h3>{titulo}</h3>
       <p>{contenido}</p>
       <h6>{precio}</h6>
-      <button className='buttonCard'>agregar +</button>
+      <button className='buttonCard'>Comprar</button>
+      <button className='buttonCard-detalle'><ImEyePlus fontSize="20px" /></button>
+    
     </div>
 
   );
 }
 
-export default Card;
+export default CardPerso;

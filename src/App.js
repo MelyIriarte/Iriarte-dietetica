@@ -1,8 +1,10 @@
 import { BrowserRouter, Route , Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './componentes/NavBar.js';
-/* import ItemListConteiner from './componentes/ItemListConteiner.js'
- */import ItemList from './componentes/ItemList.js'
+/*  import ItemListConteiner from './componentes/ItemListConteiner.js' */
+/*  import ItemList from './componentes/ItemList.js' */
+import ItemDetailContainer from './componentes/ItemDetailContainer';
+
 
  
 import Home from './paginas/Home.js';
@@ -27,9 +29,11 @@ function App() {
       </Routes>
      
      <div className='gallery'>
-      <ItemList className='body-propiedades'/>
-      {/* <ItemListConteiner className='body-propiedades'/> */}
-      </div>
+     </div>
+       <ItemDetailContainer/>  
+       {/* <ItemList className='body-propiedades'/>  */}
+     {/*  <ItemListConteiner className='body-propiedades'/>   */}
+    
     </>
     </BrowserRouter>
   

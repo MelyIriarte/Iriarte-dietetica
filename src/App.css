@@ -60,29 +60,28 @@ span.badge{
 
 /* contador */
 .contador{
-  margin: auto;
-  width: fit-content;
-  background-color: #d9dfd3;
-  text-align: center;
-  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-button{
-  background-color: #d9dfd3;
-  color: #003608;
-}
+
 
 button.agregar-carrito {
-  margin: 10px;
+  margin: 5px;
   border-radius: 19px;
-  padding: 3px;
+  padding: 8px;
   background-color: #003608;
-  color: white;
+  color: white; 
+  border: #003608;
+  margin-right:54px ;
 }
 
 button.componentes {
   padding: 4px;
-  border: transparent;
+  border: none;
+  background-color: #d9dfd3;
+
 }
 
 /* cards */
@@ -129,7 +128,6 @@ img{
   padding: 0px;
   outline: none;
   border-radius: 20px 20px 0px 0px;
- 
 }
 
 p{
@@ -139,27 +137,77 @@ p{
 
 
 h6{
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
   margin: 0;
 }
-
-.buttonCard {
+ .buttonCard{
+  font-size: 20px;
+  color: #003608; 
+  border-radius: 20px;
+  padding: 1px;
+  margin: 3px;
+ background-color: #d0d9c6;
+ border: transparent;
   text-align: center;
-  font-size: 24px;
-  color: #fff;
-  width: 100%;
-  padding: 15px;
-  outline: none;
-  cursor: pointer;
-  margin-top: 5px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
- background: #003608; 
+ }
+/* card detalle */
+.contenido{
+  background-color: #d9dfd3;
+  width: 800px;
+  display: flex;
+  margin: 20px;
+  border-radius: 20px;
+  
 }
-
-
-
+.contenido-detalle{
+  flex: 0 0 50%;
+  position: relative;
+  margin: 20px;
+}
+.img-detalle{
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+.contenido-middle{
+  position: absolute;
+  top: 85%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+.title-detalle{
+  background-color: #d9dfd3;
+  color: #003608;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 5px 37px;
+}
+.contenido-contendio{
+  flex: 1;
+  padding: 35px 35px 25px 35px;
+  margin-top:30px ;
+  display: flex;
+  flex-direction: column;
+}
+.contenido-info{
+  display: flex;
+  flex-direction: column;
+}
+.contenido-precio{
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 31px;
+  margin-bottom: 8px;
+  margin-top: 47px;
+}
+.contenidos-detalle{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 53px;
+  margin-top: 14px;
+}
 @media only screen and (min-width: 824px) and (max-width: 1023px){
   .content{
     width: 20%;
