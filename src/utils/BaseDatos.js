@@ -22,16 +22,6 @@ const BaseDatos = [
     },
     {
       id: 3,
-      img: "https://i.postimg.cc/cLW49LVk/pistachos-1-k4-QE-1200x630abc-min.png",
-      titulo: "Pistachos",
-      contenido:
-        "Pistachos salados, se vende de a bolsas de 100gr",
-      precio: "$900",
-      categoria: "A1",
-      stock: "30"
-    },
-    {
-      id: 4,
       img: "https://i.postimg.cc/9fqp1nXX/avellanas.jpg",
       titulo: "Avellana",
       contenido:
@@ -40,8 +30,27 @@ const BaseDatos = [
       categoria: "A1",
       stock: "20"
     },
-    {  
+    {
+      id: 4,
+      img: "https://i.postimg.cc/QC1nw0c5/Any-Conv-com-lino-min.png",
+      titulo: "Semillas Lino",
+      contenido:
+        "Lino, se vende de a bolsas de 100gr",
+      precio: "$400 ",
+      categoria: "A1",
+      stock: "10"},
+    {
       id: 5,
+      img: "https://i.postimg.cc/cLW49LVk/pistachos-1-k4-QE-1200x630abc-min.png",
+      titulo: "Pistachos",
+      contenido:
+        "Pistachos salados, se vende de a bolsas de 100gr",
+      precio: "$900",
+      categoria: "A1",
+      stock: "30"
+    },
+    {  
+      id: 6,
       img: "https://i.postimg.cc/qqsjjgdx/Any-Conv-com-descarga-min.png",
       titulo: "Castanas de Caju",
       contenido:
@@ -49,25 +58,7 @@ const BaseDatos = [
       precio: "$900",
       categoria: "A1"},
     {
-      id: 6,
-      img: "https://i.postimg.cc/KcPfXKdn/mix-Frutos-Secosjpg-min.png",
-      titulo: "Mix Frutos Secos",
-      contenido:
-        "Mix que tiene almendras,nueces,avellanas,castanas de caju. Se vende de a 1/2KG",
-      precio: "$1900 ",
-      categoria: "A1"
-    }, {
       id: 7,
-      img: "https://i.postimg.cc/wvJVj33Y/mix-Con-Frutasjpg-min.png",
-      titulo: "Mix Frutos con Pasas",
-      contenido:
-      "Mix que tiene almendras,nueces,pasas de uvas ,castanas de caju. Se vende de a 1/2KG",
-      precio: "$1600",
-      categoria: "A1", 
-      stock: "30"
-    },
-    {
-      id: 8,
       img: "https://i.postimg.cc/Z517wVCp/frutas-confitadas-de-color-con-fondo-blanco-251781025.jpg",
       titulo: "Frutas Abrillantadas",
       contenido:
@@ -77,16 +68,7 @@ const BaseDatos = [
       stock: "30"
     },
     {
-      id: 9,
-      img: "https://i.postimg.cc/QC1nw0c5/Any-Conv-com-lino-min.png",
-      titulo: "Semillas Lino",
-      contenido:
-        "Lino, se vende de a bolsas de 100gr",
-      precio: "$400 ",
-      categoria: "A1",
-      stock: "10"},
-    {
-      id: 10,
+      id: 8,
       img: "https://i.postimg.cc/XJMfm3LH/soya-min.png",
       titulo: "Soja Texturizada",
       contenido:
@@ -95,30 +77,9 @@ const BaseDatos = [
       categoria: "A1",
       stock: "15"
     
-    },
-     {
-      id: 11,
-      img: "https://i.postimg.cc/K8RtY4sp/almendras-Choco-min.png",
-      titulo: "Almendras con Chocolate",
-      contenido:
-        "Almendras, se vende de a bolsas de 100gr",
-      precio: "$600",
-      categoria: "A1",
-      stock: "50"
     }, 
     {
-      id: 12,
-      img: "https://i.postimg.cc/XNK6Q60Q/Any-Conv-com-nuez-Choco-min.png",
-      titulo: "Nueces con Chocolate",
-      contenido:
-        "Nuez con Chocolate, se vende de a bolsas de 100gr",
-      precio: "$500",
-      categoria: "A1" ,
-      stock: "100"},
-     
-    
-    {
-      id: 13,
+      id: 9,
       img: "https://i.postimg.cc/MK0FY36J/Any-Conv-com-girasol-min.png",
       titulo: "Semillas Girasol",
       contenido:
@@ -128,7 +89,7 @@ const BaseDatos = [
       stock: "150"
     },
     {
-      id: 14,
+      id: 10,
       img: "https://i.postimg.cc/jSgv8GBm/chia-min.png",
       titulo: "Semillas de Chia",
       contenido:
@@ -138,7 +99,36 @@ const BaseDatos = [
       stock: "20"
     },
     {
-      id: 15,
+      id: 11,
+      img: "https://i.postimg.cc/K8RtY4sp/almendras-Choco-min.png",
+      titulo: "Almendras con Chocolate",
+      contenido:
+        "Almendras, se vende de a bolsas de 100gr",
+      precio: "$600",
+      categoria: "A1",
+      stock: "50"
+    },
+    {
+      id: 12,
+      img: "https://i.postimg.cc/RZMbp1h6/Any-Conv-com-pan-min.png",
+      titulo: "Pan Casero",
+      contenido:
+        "Pan casero cortado en rodajas 250gr",
+      precio: "$600",
+      categoria: "SG", 
+      stock: "30" 
+    },
+    {
+      id: 13,
+      img: "https://i.postimg.cc/XNK6Q60Q/Any-Conv-com-nuez-Choco-min.png",
+      titulo: "Nueces con Chocolate",
+      contenido:
+        "Nuez con Chocolate, se vende de a bolsas de 100gr",
+      precio: "$500",
+      categoria: "A1" ,
+      stock: "100"},
+    {
+      id: 14,
       img: "https://i.postimg.cc/MKZyh90S/Any-Conv-com-budinsg-min.png",
       titulo: "Bizcocho de Chocolate",
       contenido:
@@ -149,7 +139,7 @@ const BaseDatos = [
     },
     
     {
-      id: 16,
+      id: 15,
       img: "https://i.postimg.cc/7LRsLpV0/Any-Conv-com-papas-1-min.png",
       titulo: "Papas Fritas",
       contenido:
@@ -157,18 +147,8 @@ const BaseDatos = [
       precio: "$900",
       categoria: "SG",
       stock: "30"  },
-    {
-      id: 17,
-      img: "https://i.postimg.cc/RZMbp1h6/Any-Conv-com-pan-min.png",
-      titulo: "Pan Casero",
-      contenido:
-        "Pan casero cortado en rodajas 250gr",
-      precio: "$600",
-      categoria: "SG", 
-      stock: "30" 
-    },
      {
-      id: 18,
+      id: 16,
       img: "https://i.postimg.cc/HLvKyJpJ/Any-Conv-com-chocosg-min.png",
       titulo: "Barritas de chocolate",
       contenido:
@@ -178,7 +158,7 @@ const BaseDatos = [
       stock: "30" 
     },
     {
-      id: 19,
+      id: 17,
       img: "https://i.postimg.cc/GtCj8rs8/leche-Almendras-min.png",
       titulo: "Leche almendras",
       contenido:
@@ -188,7 +168,7 @@ const BaseDatos = [
       stock: "30" 
     },
     {
-      id: 20,
+      id: 18,
       img: "https://i.postimg.cc/CLhCt7r9/amande-leche-almendras-1-min.png",
       titulo: "Leche almendras",
       contenido:
@@ -198,7 +178,7 @@ const BaseDatos = [
       stock: "60" 
     },
     {
-      id: 21,
+      id: 19,
       img: "https://i.postimg.cc/sXtNTtGs/Any-Conv-com-frutosrojos-min.png",
       titulo: "Frutos Rojos",
       contenido:
@@ -208,7 +188,7 @@ const BaseDatos = [
       stock: "40"
     },
     {
-      id: 22,
+      id: 20,
       img: "https://i.postimg.cc/Y2YnpDmL/arandanos-min.png",
       titulo: "Arandanos",
       contenido:
@@ -218,7 +198,7 @@ const BaseDatos = [
       stock: "30"
     },
     {
-      id: 23,
+      id: 21,
       img: "https://i.postimg.cc/MKwsX0yP/fruutos-Rojos-min.png",
       titulo: "Frambuesas",
       contenido:
@@ -228,7 +208,7 @@ const BaseDatos = [
       stock: "50" 
     },
     {
-      id: 24,
+      id: 22,
       img: "https://i.postimg.cc/VN09K5q0/Pulpa-de-Maracuya-sin-semillas-min.png",
       titulo: "Pulpa de Maracuya",
       contenido:
@@ -238,7 +218,7 @@ const BaseDatos = [
       stock: "20" 
     },
     {
-      id: 25,
+      id: 23,
       img: "https://i.postimg.cc/t42vK1nr/Any-Conv-com-pulpa-frutilla-min.png",
       titulo: "Pulpa de Frutilla",
       contenido:
@@ -248,7 +228,7 @@ const BaseDatos = [
       stock: "20" 
     },
     {
-      id: 26,
+      id: 24,
       img: "https://i.postimg.cc/wBn2zDqk/haburguesa-min.png",
       titulo: "Hamburguesas Veggis",
       contenido:
@@ -258,7 +238,7 @@ const BaseDatos = [
       stock: "20"  
     },
     {
-      id: 27,
+      id: 25,
       img: "https://i.postimg.cc/wMghxVSD/tofu-jpg-min.png",
       titulo: "Tofu",
       contenido:
@@ -268,7 +248,7 @@ const BaseDatos = [
       stock: "20"  
     },
     {
-      id: 28,
+      id: 26,
       img: "https://i.postimg.cc/hj9Lqw3S/vegetalex-min.png",
       titulo: "Vegetalex",
       contenido:
@@ -277,6 +257,25 @@ const BaseDatos = [
       categoria: "FC",
       stock: "20"  
 
+    },
+    {
+      id: 27,
+      img: "https://i.postimg.cc/KcPfXKdn/mix-Frutos-Secosjpg-min.png",
+      titulo: "Mix Frutos Secos",
+      contenido:
+        "Mix que tiene almendras,nueces,avellanas,castanas de caju. Se vende de a 1/2KG",
+      precio: "$1900 ",
+      categoria: "A1"
+    },
+    {
+      id: 28,
+      img: "https://i.postimg.cc/wvJVj33Y/mix-Con-Frutasjpg-min.png",
+      titulo: "Mix Frutos con Pasas",
+      contenido:
+      "Mix que tiene almendras,nueces,pasas de uvas ,castanas de caju. Se vende de a 1/2KG",
+      precio: "$1600",
+      categoria: "A1", 
+      stock: "30"
     },
 
   ];

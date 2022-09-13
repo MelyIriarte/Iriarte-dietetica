@@ -136,21 +136,29 @@ p{
 }
 
 
-h6{
-  font-size: 30px;
+.card-precio{
+  font-size: 27px;
   text-align: center;
-  margin: 0;
+  margin: 9px;
 }
  .buttonCard{
-  font-size: 20px;
-  color: #003608; 
-  border-radius: 20px;
-  padding: 1px;
-  margin: 3px;
- background-color: #d0d9c6;
- border: transparent;
+ font-size: 20px;
+ color:#e8f5d9; 
+ border-radius: 20px;
+ padding: 0px 10px;
+ margin: 1px 13px;
+ background-color: #003608;
+ border: #003608;
   text-align: center;
  }
+
+ .buttonCard-detalle{
+  background-color: #d0d9c6;
+  border-radius: 20px;
+  margin: 10px 16px;
+  border-color: #003608;
+}
+ 
 /* card detalle */
 .contenido{
   background-color: #d9dfd3;
@@ -170,24 +178,20 @@ h6{
   width: 100%;
   border-radius: 20px;
 }
-.contenido-middle{
-  position: absolute;
-  top: 85%;
-  left: 17%;
-  transform: translate(-50%, -50%);
-}
+
 .title-detalle{
   background-color: #d9dfd3;
   color: #003608;
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 500;
   border-radius: 10px;
-  padding: 5px 37px;
+  padding: 20px 37px;
+  text-align: center;
 }
 .contenido-contendio{
   flex: 1;
   padding: 35px 35px 25px 35px;
-  margin-top:30px ;
+  margin-top:-11px ;
   display: flex;
   flex-direction: column;
 }
@@ -200,7 +204,7 @@ h6{
   letter-spacing: 2px;
   font-size: 31px;
   margin-bottom: 8px;
-  margin-top: 47px;
+  text-align: center;
 }
 .contenidos-detalle{
   font-size: 20px;
@@ -212,7 +216,13 @@ h6{
   .content{
     width: 20%;
   }
-
+  .buttonCard{
+    margin: 1px 5px;
+    }
+   
+    .buttonCard-detalle{
+     margin: 10px 2px;
+   }
 
 };
 
@@ -224,5 +234,11 @@ h6{
   h6{
     font-size: 20px;
   }
-  
+  .buttonCard{
+    margin: 1px 5px;
+    }
+   
+    .buttonCard-detalle{
+     margin: 10px 2px;
+   }
 };

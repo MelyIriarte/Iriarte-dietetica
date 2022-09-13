@@ -1,18 +1,26 @@
 import React from "react";
-import ItemCount from "../componentes/ItemCount.js"
+import Item from "./Item.js";
 
 
-const ItemList = () => {
+
+const ItemList = ({data}) => {
  
   
   return (
-    
-  <>
-  
-  <ItemCount initial={1} stock={5} onAdd={onAdd}/>
-  </>
-    
-  )
+    <>
+      {data.length ? 
+       data.map(item => (
+        < Item
+          id={item.id}
+          key={item.id}
+          img={item.img}
+          precio={item.precio}
+        />
+      ))   : <p>Cargando datos....</p>
+    }
+    </>
+  );
+
 };
 
 export default ItemList;

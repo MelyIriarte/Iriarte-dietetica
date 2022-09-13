@@ -1,35 +1,33 @@
 import React, { useState , useEffect } from "react";
 import Promesa from "../utils/Promesa.js"; 
- import Card from "./Card.js"; 
 import BaseDatos from '../utils/BaseDatos' 
-
+import ItemList from "./ItemList.js";
+import {useParams} from 'react-router-dom';
 
 function ItemListConteiner() {
  
-  const [data , setData] = useState([]); 
-
-
+ const [data , setData] = useState([]); 
+ const { idCategoria } = useParams();
   useEffect(() => { 
- 
-    Promesa(2000, BaseDatos)
-     .then(datos => setData(BaseDatos))
-     .catch(err => console.log(err))
-     
-   }, [] );
-     return (
-     <>
-       {data.length ? 
-        data.map((item) => (
-         <Card
-           key={item.id}
-           img={item.img}
-           precio={item.precio}
-         />
-       ))   : <p>Cargando datos....</p>
+     if (idCategoria){
+      Promesa(2000, BaseDatos.filter(item => item.categoria === idCategoria ))
+      .then(datos => {  
+        setData(datos)
+         
+      })
+      .catch(err => console.log(err))
+     } 
+     else{
+      Promesa(2000, BaseDatos)
+      .then(datos => setData(datos))
+      .catch(err => console.log(err))
+      
      }
-     </>
-   );
-
+   
+   }, [idCategoria] );
+    return(
+      <ItemList data={data}/>
+    );
 
 
 }

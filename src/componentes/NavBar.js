@@ -8,18 +8,18 @@ const NavBar = () => {
     return(
       <Navbar expand="lg">
         <Container>
-            <Navbar.Brand className="titulo" href="#home">DIETCON</Navbar.Brand>  
+            <Navbar.Brand className="titulo"><NavLink to="/">DIETCON</NavLink></Navbar.Brand>  
             <Navbar.Toggle aria-controls="basic-navbar-nav" /> 
             <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="me-auto">
-                   <NavLink to="/almacen">Almacen</NavLink>
-                   <NavLink to="/bebidas">Bebidas </NavLink>
-                   <NavLink to="/frescosycongelados">Frescos y Congelados</NavLink>
-                   <NavLink to="singluten">Sin Gluten</NavLink>
+                   <NavLink to="/category/A1">Almacen</NavLink>
+                   <NavLink to="/category/B1">Bebidas </NavLink>
+                   <NavLink to="/category/FC">Frescos y Congelados</NavLink>
+                   <NavLink to="/category/SG">Sin Gluten</NavLink>
                  </Nav>
+            <CartWidget/>
             </Navbar.Collapse>
         </Container>
-            <CartWidget/>
       </Navbar>
     );
 }
