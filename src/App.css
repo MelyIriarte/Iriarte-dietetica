@@ -57,7 +57,6 @@ span.badge{
 /* generales */
 
 
-
 /* contador */
 .contador{
   width: 100%;
@@ -65,23 +64,29 @@ span.badge{
   justify-content: flex-end;
 }
 
-
-
 button.agregar-carrito {
   margin: 5px;
   border-radius: 19px;
-  padding: 8px;
+  padding: 8px 15px;
   background-color: #003608;
   color: white; 
   border: #003608;
   margin-right:54px ;
+  margin-bottom: 15px;
 }
 
 button.componentes {
   padding: 4px;
   border: none;
   background-color: #d9dfd3;
+}
 
+.boton-carrito {
+  border-radius: 19px;
+  padding: 6px 15px;
+  background-color: #003608;
+  color: white; 
+  margin-bottom: 14px;
 }
 
 /* cards */
@@ -99,7 +104,7 @@ h3{
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color:#efe9e8 ;
+  background-color:#efe9e8 ; 
 }
 
 .content{
@@ -146,7 +151,7 @@ p{
  color:#e8f5d9; 
  border-radius: 20px;
  padding: 0px 10px;
- margin: 1px 13px;
+ margin: 1px 15px;
  background-color: #003608;
  border: #003608;
   text-align: center;
@@ -160,6 +165,10 @@ p{
 }
  
 /* card detalle */
+.contenido-general{
+  background-color:#efe9e8;
+}
+
 .contenido{
   background-color: #d9dfd3;
   width: 800px;
@@ -180,7 +189,7 @@ p{
 }
 
 .title-detalle{
-  background-color: #d9dfd3;
+  background-color:#d0d9c6;
   color: #003608;
   font-size: 29px;
   font-weight: 500;
@@ -212,6 +221,7 @@ p{
   margin-bottom: 53px;
   margin-top: 14px;
 }
+
 @media only screen and (min-width: 824px) and (max-width: 1023px){
   .content{
     width: 20%;
