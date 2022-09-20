@@ -1,15 +1,24 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
-
+import { CartContext } from './CartContext.js';
 import ItemCount from './ItemCount.js'
+import { BsCheck2All} from 'react-icons/bs';
+import Swal from 'sweetalert2';
 
 const ItemDetail= ({item}) => {
    
   const [goToCart, setGoToCart] = useState (0);
-
-  function onAdd (count) {
-    console.log(count)
-   setGoToCart(count);
+  const { addItem } = useContext(CartContext);
+ 
+  const onAdd = (quantity) =>{
+  setGoToCart(quantity);
+  addItem(item,quantity )
+  Swal.fire({
+    position: 'top-end',
+    title: `${[<BsCheck2All/>]}Producto añadido`,
+    showConfirmButton: false,
+    timer: 1500
+  })
   }
 
   return (
@@ -34,7 +43,7 @@ const ItemDetail= ({item}) => {
     </div>
     </div>
     </div>
-    : <p> Cargando datos ...</p>
+    : <p className='cargando'> Cargando datos ...</p>
 }
     </>
   ) 

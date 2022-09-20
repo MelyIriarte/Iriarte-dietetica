@@ -7,7 +7,7 @@ import CartWidget from "./CartWidget";
 const NavBar = () => {
     return(
       <Navbar expand="lg">
-        <Container>
+        <Container className="container-nav">
             <Navbar.Brand className="titulo"><NavLink to="/">DIETCON</NavLink></Navbar.Brand>  
             <Navbar.Toggle aria-controls="basic-navbar-nav" /> 
             <Navbar.Collapse id="basic-navbar-nav">
@@ -17,7 +17,7 @@ const NavBar = () => {
                    <NavLink to="/category/FC">Frescos y Congelados</NavLink>
                    <NavLink to="/category/SG">Sin Gluten</NavLink>
                  </Nav>
-            <CartWidget/>
+             <NavLink to="/cart"><CartWidget/></NavLink>
             </Navbar.Collapse>
         </Container>
       </Navbar>
