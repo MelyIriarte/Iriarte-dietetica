@@ -70,7 +70,9 @@ span.badge{
   position: absolute;
   background-color: #d9dfd3;
 }
-
+svg.carrito {
+  margin-top: -13px;
+}
 .badge{
   position: relative;
   background-color: red;
@@ -180,7 +182,7 @@ p{
  font-size: 20px;
  color:#e8f5d9; 
  border-radius: 20px;
- padding: 0px 10px;
+ padding: 0px 15px;
  margin: 1px 15px;
  background-color: #003608;
  border: #003608;
@@ -246,27 +248,33 @@ p{
 }
 
 .img-cart{
-width: 16%;
-border-radius: 20px;
-margin: 36px 0px 0px 72px;
-}
-.h4-producto{
-margin-left: 45px;
-
+width: 80%;
+border-radius: 29px;
 }
 
 .h6-cantidad{
-padding-left: 421px;
+padding-left: 156px;
 }
-.h6-precio{
-  padding-left: 15px;
-  }
+.h{
+  padding-left: 122px;
+}
+.flex-carrito{
+  display: flex;
+  place-content: space-between;
+}
 
-.div-cart{
-  display:flex;
-  align-items: center;
-  margin: 26px;
+.carrito-vacio{
+  margin-right: 15px;
 }
+
+.div-cart {
+  align-items: center;
+  margin: 24px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
 button.borrar-carrito {
   margin: 5px;
   border-radius: 19px;
@@ -275,22 +283,58 @@ button.borrar-carrito {
   color: white; 
   border: #003608;
   margin-right: 11px ;
+}
 
-}
 button.borrar-item {
-  font-size: 26px;
-  font-weight: 600;
-  padding-left: 10px;
-  border: none;
-  padding-top: -49px;
-  padding-bottom: 16px;
+  margin: 5px;
+  border-radius: 19px;
+  padding: 8px;
+  background-color: #003608;
+  color: white;
+  border: #003608;
+  margin-right: 239px;
+  margin-top: -6px;
 }
+
 .link-sincolor{
   background-color:#efe9e8;
 }
+
 .swal2-container.swal2-top-end>.swal2-popup, .swal2-container.swal2-top-right>.swal2-popup {
 
   background-color: #efe9e8;
+}
+
+/* ORDEN CARRITO */
+.orden-carrito {
+  display: grid;
+  align-content: center;
+  background-color: #d9dfd3;
+  margin: 39px;
+}
+h6.orden-total {
+  background-color:#d9dfd3;
+  margin: 16px;
+}
+h6.orden-iva {
+  background-color:#d9dfd3;
+  margin: 16px;
+}
+h6.orden-subtitulo {
+  background-color: #d9dfd3;
+  margin: 16px;
+}
+h3.orden-titulo {
+  background-color:  #d9dfd3;
+}
+
+.finalizar-carrito {
+  border-radius: 19px;
+  padding: 8px 0px;
+  background-color: #003608;
+  color: white;
+  border: #003608;
+  margin: 13px 18px 13px 18px;
 }
 
 @media only screen and (min-width: 824px) and (max-width: 1023px){

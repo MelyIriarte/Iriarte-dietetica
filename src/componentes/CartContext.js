@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react';
-/* import React, { useContext, useState } from 'react';
- */export const CartContext = createContext([]);
+export const CartContext = createContext([]);
 
  const CartContextProvider = ({children}) =>{
    
@@ -17,11 +16,32 @@ import { createContext, useState } from 'react';
    
    const removeItem = (id) => setCartList(cartList.filter(BaseDatos => BaseDatos.id !== id));
  
-   const isInCard = (id) => cartList.find(BaseDatos => BaseDatos.id === id) ? true : false ;  
-  
- 
+   const isInCard = (id) => cartList.some(BaseDatos => BaseDatos.id === id);  
+
+    const calcItemCard = () => {
+    console.log( cartList.reduce((previusValue,currentValue)=> previusValue + currentValue.quantity, 0))
+    } 
+   
+    const calcTotalItem = (id) => {
+      let index = cartList.map(item => item.id).indexOf(id)
+        return cartList[index].precio * cartList[index].quantity;
+    }
+
+    const calcSubTotal = () => {
+      let subTotal = cartList.map(item => calcTotalItem(item.id));
+      return subTotal.reduce((previusValue,currentValue)=> previusValue + currentValue)
+    }
+   
+    const calcIva = () =>{
+      return calcSubTotal() *0.21
+    }
+
+    const calcTotal = () =>{
+      return calcSubTotal() + calcIva ()
+    }
+
     return(
-        <CartContext.Provider value={{cartList,addItem, clear, removeItem,isInCard}}>
+        <CartContext.Provider value={{cartList,addItem, clear, removeItem,isInCard, calcItemCard, calcTotalItem, calcSubTotal, calcIva , calcTotal }}>
             {children}
         </CartContext.Provider>
     )

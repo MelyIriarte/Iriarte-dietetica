@@ -3,6 +3,7 @@ import ItemDetail from './ItemDetail';
 import Promesa from '../utils/Promesa';
 import BaseDatos from '../utils/BaseDatos.js'
 import { useParams } from 'react-router-dom';
+import { firestoreFetchOne } from '../utils/firestoreFetch';
  
 const ItemDetailContainer = () => {
 
@@ -14,7 +15,12 @@ const ItemDetailContainer = () => {
      .then(result => setData(result))
      .catch(err => console.log(err))
      
-   }, [idItem]);
+   }, [idItem]); 
+/* 
+   firestoreFetchOne(idItem)
+   .then (result => setData(result))
+   .catch(err => console.log(err))
+  },[]); */
  
     return (    
            <ItemDetail item={data}/>  

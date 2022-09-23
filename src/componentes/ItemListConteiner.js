@@ -3,34 +3,42 @@ import Promesa from "../utils/Promesa.js";
 import BaseDatos from '../utils/BaseDatos' 
 import ItemList from "./ItemList.js";
 import {useParams} from 'react-router-dom';
-
+import {firestoreFetch} from '../utils/firestoreFetch'
 function ItemListConteiner() {
  
  const [data , setData] = useState([]); 
  const { idCategoria } = useParams();
-  useEffect(() => { 
-     if (idCategoria){
+  useEffect( () => { 
+      if (idCategoria){
       Promesa(2000, BaseDatos.filter(item => item.categoria === idCategoria ))
       .then(datos => {  
-        setData(datos)
-         
-      })
+        setData(datos)})
       .catch(err => console.log(err))
      } 
      else{
       Promesa(2000, BaseDatos)
       .then(datos => setData(datos))
-      .catch(err => console.log(err))
-      
-     }
-   
+      .catch(err => console.log(err))  
+     } /* 
+     firestoreFetch(idCategoria)
+     .then(result => setData(result))
+     .catch(err => console.log(err))
    }, [idCategoria] );
+
+   useEffect (()=> {
+    return(()=>{
+      setData([]);
+    })
+   }, []);
+ */
+
     return(
       <ItemList data={data}/>
     );
 
 
-}
+})}
+
 
 export default ItemListConteiner;
   

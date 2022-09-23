@@ -5,8 +5,6 @@ import NavBar from './componentes/NavBar.js';
 import ItemListConteiner from './componentes/ItemListConteiner.js'
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import Cart from './componentes/Cart.js';
-/* import CartContexto from './componentes/CartContext.js';
- */
 import  CartContextProvider from './componentes/CartContext.js';
 
 function App() {
@@ -21,8 +19,6 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
       </Routes>
       </CartContextProvider>
- 
-  
     </BrowserRouter>
   
   );
