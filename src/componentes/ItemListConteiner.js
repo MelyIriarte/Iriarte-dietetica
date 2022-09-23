@@ -3,7 +3,7 @@ import Promesa from "../utils/Promesa.js";
 import BaseDatos from '../utils/BaseDatos' 
 import ItemList from "./ItemList.js";
 import {useParams} from 'react-router-dom';
-import {firestoreFetch} from '../utils/firestoreFetch'
+/* import {firestoreFetch} from '../utils/firestoreFetch' */
 function ItemListConteiner() {
  
  const [data , setData] = useState([]); 
@@ -31,13 +31,13 @@ function ItemListConteiner() {
     })
    }, []);
  */
-
+  },[idCategoria]);
     return(
       <ItemList data={data}/>
     );
 
 
-})}
+}
 
 
 export default ItemListConteiner;

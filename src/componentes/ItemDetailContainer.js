@@ -3,8 +3,8 @@ import ItemDetail from './ItemDetail';
 import Promesa from '../utils/Promesa';
 import BaseDatos from '../utils/BaseDatos.js'
 import { useParams } from 'react-router-dom';
-import { firestoreFetchOne } from '../utils/firestoreFetch';
- 
+/* import { firestoreFetchOne } from '../utils/firestoreFetch';
+  */
 const ItemDetailContainer = () => {
 
  const [data, setData] = useState({});
