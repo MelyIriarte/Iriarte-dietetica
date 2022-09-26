@@ -11,7 +11,6 @@ div#basic-navbar-nav {
 }
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-
   background-color: #d9dfd3;
 }
 
@@ -35,6 +34,11 @@ div#basic-navbar-nav {
 span {
   padding: 10px;
   background-color: #d9dfd3;
+}
+
+svg.carrito {
+  margin-left: -2px;
+  margin-top: -3px;
 }
 
 .me-auto{
@@ -62,7 +66,7 @@ a.titulo.navbar-brand {
 span.badge{
   padding: 3px 5px;
   top: -14px;
-  right: -19px;
+  right: -23px;
  
 }
 
@@ -70,9 +74,7 @@ span.badge{
   position: absolute;
   background-color: #d9dfd3;
 }
-svg.carrito {
-  margin-top: -13px;
-}
+
 .badge{
   position: relative;
   background-color: red;
@@ -206,6 +208,7 @@ p{
   position: relative;
   margin: 20px;
 }
+
 .img-detalle{
   display: block;
   width: 50%;

@@ -1,18 +1,20 @@
-import React, { useContext } from 'react'
 import { FaShoppingCart} from 'react-icons/fa';
 import {Nav , Badge } from "react-bootstrap";
-import { CartContext } from './CartContext';
+import { useContext } from "react";
+import { CartContext } from "./CartContext";
 
+const CartWidget = () => {
 
-function CartWidget() {
-  const { calcItemCard } = useContext(CartContext)
- console.log(calcItemCard)
+const {calcItemCard}  = useContext(CartContext);
+
 
   return (
-           <Nav>
-             <Badge className='badge' pill bg='denger' ></Badge>
-             <FaShoppingCart  className='carrito' fontSize="24px"/> 
-          </Nav>
+    <Nav>
+      {calcItemCard()> 0 ? <Badge className='badge' pill bg='denger' >{calcItemCard()}</Badge>
+      : <></> }
+     
+      <FaShoppingCart  className='carrito' fontSize="24px"/> 
+    </Nav>
   )
 }
 

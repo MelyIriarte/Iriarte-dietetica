@@ -3,8 +3,7 @@ import { Link } from "react-router-dom"
 import { CartContext } from "./CartContext"
 
 const Cart = () => {
-  const { cartList, clear, removeItem , calcTotalItem, calcSubTotal , calcIva, calcTotal} = useContext(CartContext);
- 
+ const { cartList, clear, removeItem , calcTotalItem, calcSubTotal , calcIva, calcTotal} = useContext(CartContext); 
 
   return (
     <>
@@ -40,11 +39,10 @@ const Cart = () => {
     <h6 className="orden-iva">IVA: ${calcIva()}</h6>
     <h6 className="orden-total">TOTAL: ${calcTotal()}</h6>
     <button className='finalizar-carrito'>FINALIZAR COMPRA</button>
-  </div>
- }
-    </div>
-    </>
-  )
-}
+  </div>}
+  
+  </div> 
+  </>
+)}
 
-export default Cart
+export default Cart;

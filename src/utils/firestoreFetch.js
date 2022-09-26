@@ -9,10 +9,10 @@ export const firestoreFetch = async (idCategoria) => {
     } else {
         q = query(collection(db, "products"), orderBy('titulo'));
     }
-    const querySnapshot = await getDocs(q);
-    const dataFromFirestore = querySnapshot.docs.map(document => ({
-        id: document.id,
-        ...document.data()
+    const datos = await getDocs(q);
+    const dataFromFirestore = datos.docs.map(product => ({
+        id: product.id,
+        ...product.data()
     }));
     return dataFromFirestore;
 }

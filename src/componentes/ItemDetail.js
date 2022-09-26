@@ -14,7 +14,7 @@ const ItemDetail= ({item}) => {
   addItem(item,quantity );
   Swal.fire({
     position: 'top-end',
-    title: `Producto añadido correctamnete`,
+    title: `Producto añadido con exito`,
     showConfirmButton: false,
     timer: 1500
   })}
@@ -34,7 +34,7 @@ const ItemDetail= ({item}) => {
            <p className='contenidos-detalle'>{item.contenido}</p>
        </div>
      
-      { goToCart ?
+      { goToCart > 0 ?
         <Link to="/cart"> <button className='boton-carrito'> Ir al Carrito </button> </Link>  
         : <ItemCount initial={1} stock={item.stock} onAdd={onAdd}/>}
     </div>
