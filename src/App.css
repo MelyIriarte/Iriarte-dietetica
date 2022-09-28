@@ -241,8 +241,12 @@ p{
 .contenidos-detalle{
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 53px;
+  margin-bottom: 20px;
   margin-top: 14px;
+}
+p.contenidos-stock {
+  margin: 18px;
+  text-align: inherit;
 }
 /* Card */
 .titulo-h2{

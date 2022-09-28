@@ -32,6 +32,7 @@ const ItemDetail= ({item}) => {
           <h2 className='title-detalle'>{item.titulo}</h2>  
            <h6 className='contenido-precio'>${item.precio}</h6>
            <p className='contenidos-detalle'>{item.contenido}</p>
+           <p className='contenidos-stock'>{item.stock} Unidades</p>
        </div>
      
       { goToCart > 0 ?
