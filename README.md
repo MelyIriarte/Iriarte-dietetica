@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# DIETCON 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Es un ecommerce de una dietetica ficticia, con el podras elegir tus productos atraves de la pagina principal o en algun apartado especifico por categoria,los agregaras al carrito el cual genera una orden de compra que quedara guardada en nuestra base de datos en [Firebase](https://console.firebase.google.com/u/0/project/dietcon-shop/firestore/data/~2Forders~2F7V9QtUoeQBfXugwmEwC5?hl=es).
+
+[![Captura-de-pantalla-36.png](https://i.postimg.cc/pTmh0BDg/Captura-de-pantalla-36.png)](https://postimg.cc/ygz8xcpP)
 
 ## Available Scripts
 
