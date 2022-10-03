@@ -18,13 +18,11 @@ export const CartContext = createContext([]);
  
    const isInCard = (id) => cartList.some(BaseDatos => BaseDatos.id === id);  
 
-  
-  const calcItemCard = () => {
-   return cartList.reduce((previusValue,currentValue)=> previusValue + currentValue.quantity, 0)
+   const calcItemCard = () => {
+    return cartList.reduce((previusValue,currentValue)=> previusValue + currentValue.quantity, 0)
   } 
- 
-   
-    const calcTotalItem = (id) => {
+
+   const calcTotalItem = (id) => {
       let index = cartList.map(item => item.id).indexOf(id)
         return cartList[index].precio * cartList[index].quantity;
     }
@@ -34,15 +32,15 @@ export const CartContext = createContext([]);
       return subTotal.reduce((previusValue,currentValue)=> previusValue + currentValue)
     }
    
-    const calcIva = () =>{
+   const calcIva = () =>{
       return calcSubTotal() *0.21
     }
 
-    const calcTotal = () =>{
+   const calcTotal = () =>{
       return calcSubTotal() + calcIva ()
     }
 
-    return(
+  return(
         <CartContext.Provider value={{cartList,addItem, clear, removeItem,isInCard, calcItemCard , calcTotalItem, calcSubTotal, calcIva , calcTotal }}>
             {children}
         </CartContext.Provider>
@@ -50,7 +48,3 @@ export const CartContext = createContext([]);
  }
 
 export default CartContextProvider;
-
-
-
-

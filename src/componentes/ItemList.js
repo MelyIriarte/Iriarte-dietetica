@@ -1,11 +1,8 @@
 import React from "react";
 import Item from "./Item.js";
 
-
-
 const ItemList = ({data}) => {
  
-  
   return (
     <>
       {data.length ? 
@@ -16,11 +13,9 @@ const ItemList = ({data}) => {
           img={item.img}
           precio={item.precio}
         />
-      ))   : <p>Cargando datos....</p>
-    }
-    </>
-  );
-
-};
+      ))  : <p>Cargando datos....</p>
+    } </>
+  )
+}
 
 export default ItemList;

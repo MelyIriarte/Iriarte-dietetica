@@ -28,17 +28,18 @@ const ItemDetail= ({item}) => {
         <img className='img-detalle' src={item.img}  alt="/" /> 
       </div>
      <div className='contenido-contenido'>
-       <div className='contenido-info'>
-          <h2 className='title-detalle'>{item.titulo}</h2>  
+        <div className='contenido-info'>
+           <h2 className='title-detalle'>{item.titulo}</h2>  
            <h6 className='contenido-precio'>${item.precio}</h6>
            <p className='contenidos-detalle'>{item.contenido}</p>
-           <p className='contenidos-stock'>{item.stock} Unidades</p>
-       </div>
+          <p className='contenidos-stock'>{item.stock} Unidades</p>
+        </div>
      
-      { goToCart > 0 ?
-        <Link to="/cart"> <button className='boton-carrito'> Ir al Carrito </button> </Link>  
-        : <ItemCount initial={1} stock={item.stock} onAdd={onAdd}/>}
-    </div>
+       { goToCart > 0 ?
+         <Link to="/cart"> <button className='boton-carrito'> Ir al Carrito </button> </Link>  
+         : <ItemCount initial={1} stock={item.stock} onAdd={onAdd}/>}
+     </div>
+
     </div>
     </div>
     : <p className='cargando'> Cargando datos ...</p>}

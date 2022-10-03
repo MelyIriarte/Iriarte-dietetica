@@ -1,8 +1,10 @@
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { CartContext } from "./CartContext"
+import Swal from 'sweetalert2';
 import {  serverTimestamp ,doc, setDoc, collection, updateDoc, increment } from "firebase/firestore";
 import {db} from '../utils/firebaseConfig'
+
 
 const Cart = () => {
  const ctx = useContext(CartContext); 
@@ -27,7 +29,12 @@ const Cart = () => {
    
     const newOrderRef = doc(collection(db,"orders"))
     await setDoc(newOrderRef, orden)
-    alert('Su orden fue creada exitosamente. Gracias por su compra.')
+    Swal.fire({
+      position: 'top',
+      title: 'Su orden fue creada exitosamente. Gracias por su compra.',
+      showConfirmButton: false,
+      timer: 1500
+    })
     ctx.clear()
     
     itemsForDB.map(async (item) => {
@@ -37,7 +44,6 @@ const Cart = () => {
        });
       })
 }
-
  
   return (
     <>

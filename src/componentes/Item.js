@@ -1,8 +1,7 @@
 import { ImEyePlus } from 'react-icons/im'
 import { Link } from 'react-router-dom';
 
-function Item({id ,img , precio}) {
-  
+function Item({id ,img , precio}) { 
  return (
     <div className='content'>
       <img src={img}  alt="/"  /> 

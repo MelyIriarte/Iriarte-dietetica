@@ -6,8 +6,6 @@ import { CartContext } from "./CartContext";
 const CartWidget = () => {
 
 const {calcItemCard}  = useContext(CartContext);
-
-
   return (
     <Nav>
       {calcItemCard()> 0 ? <Badge className='badge' pill bg='denger' >{calcItemCard()}</Badge>
